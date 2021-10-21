@@ -21,19 +21,19 @@ nav{
   color: #fff;
   font-size: 28px;
   line-height: 60px;
-  padding-left: 330px; /*Отступ слева*/
+  padding-left: 300px; /*Отступ слева*/
   float: left; /*Прижимается блок к следующему блоку с левой или правой стороны*/
 }
 
 .menu{
   float: left;
-  padding-left: 250px;
+  padding-left: 300px;
 
 }
 
 .menu li{
   float: left; /*В данной ситуации это свойство поставило кнопки меню в ряд и прижало кнопку к кнопке*/
-  line-height: 25px; /*Расстояние между верхней линией и текстом*/
+  line-height: 60px; /*Расстояние между верхней линией и текстом*/
   color: #fff; /*Цвет букв меню*/
   margin-right: 40px; /*Отступ справа*/
   font-size: 16px; /*Размер текста*/
@@ -50,7 +50,7 @@ nav{
 }
 
 .title__container{
-  margin: 280px 0px 0px 250px;
+  margin: 400px 0px 0px 250px;
   color: #2c384a;
   text-align: center;
 
@@ -104,7 +104,7 @@ nav{
 }
 
 .aboutme_text_img {
-  margin: -30px 10px 30px 750px;
+  margin: 0px 10px 30px 755px;
 }
 
 .aboutme_text_img1 img {
@@ -121,6 +121,7 @@ nav{
   padding-left: 25%;
   padding-right: 25%;
   color: #6d7682;
+  font-size: 15px;
 }
 
 .aboutme_css input {
@@ -158,61 +159,65 @@ nav{
 }
 
 .container3 img {
-  margin: -1200px 100px 100px 750px;
+  margin: -65px 100px 100px 760px;
 }
 
 
 .container4 {
-  column-gap: 6%;
+  column-gap: 5%;
   column-count: 4;
-  column-fill: balance;
+  column-fill: auto;
+  margin: 0px 70px 0px 70px;
 
 }
 
 .Veb-dizain {
   color: #000;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding: 120px 20px 5px 20px;
 }
 
 .Veb-dizain1 {
-  margin: 0px 0px -100px -650px;
+  margin: 0px 0px -80px -670px;
   padding: 20px 20px;
 }
 
 
 .Razrabotka {
   color: #000;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding: 140px 20px 5px 20px;
 }
 
 .Razrabotka1 {
-  margin: 0px 0px -100px -650px;
+  margin: -20px 0px -70px -670px;
+  padding: 13px 20px;
 }
 
 .Optimizatsia {
   color: #000;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding: 140px 20px 5px 20px;
 }
 
 .Optimizatsia1 {
-  margin: 0px 0px -100px -650px;
+  margin: -20px 0px -80px -670px;
+  padding: 15px 20px;
 }
 
 .Marketing {
   color: #000;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   padding: 140px 20px 5px 20px;
 }
 
 .Marketing1 {
-  margin: 0px 0px -100px -650px;
+  margin: -20px 0px -90px -670px;
+  padding: 20px 20px;
 }
 
 
@@ -222,35 +227,44 @@ nav{
 
 .container5 {
   line-height: 15px;
-  font-size: 25px;
+  font-size: 23px;
   color: #263244;
-  padding: 0px 10px 10px 0px;
+  padding: 0px 30px 10px 0px;
   text-align: center;
 }
 
+.container5 h4 {
+  padding: 20px 0px 30px 0px;
+}
+
+.container5 h6 {
+  font-size: 20px;
+  margin: -20px 0px 0px 0px;
+}
+
 .container5 img {
-  margin: -10px 10px 10px 10px;
+  margin: -10px 10px 100px 10px;
 }
 
 .container6 {
   background: url(../img/кейсы.png) 50% 50%/1400px no-repeat local;
-  margin: 0px 0px 0px 80px;
+  margin: 30px 0px 0px 150px;
 }
 
 
 .container9{
   column-count: 2;
   column-gap: 0px;
-  margin: 10px 10px 150px 10px;
+  margin: 50px 10px 150px 10px;
 }
 
 .container8 {
-  margin: 100px 100px 0px -300px;
+  margin: 100px 150px 0px -250px;
 
 }
 
 .container7 {
-  margin: -10px 10px 10px 80px;
+  margin: -10px 10px 10px 150px;
 
 }
 
@@ -269,7 +283,7 @@ nav{
 
 .container10 {
   text-align: left;
-  margin: 200px 670px 150px 500px;
+  margin: 100px 670px 150px 500px;
 }
 
 .container11 {
@@ -296,14 +310,15 @@ nav{
 }
 
 .container13 {
-  word-spacing: 720px;
+  word-spacing: 721px;
   font-size: 20px;
 }
 
 .container14 {
-  word-spacing: 673px;
+  word-spacing: 677px;
   font-size: 20px;
 }
+
 
 
 
@@ -314,7 +329,7 @@ nav{
   line-height: 86px;
   font-size: 25px;
   color: #263244;
-  padding: 100px 10px 0px 10px;
+  padding: 80px 10px 0px 10px;
 }
 
 .container16 {
@@ -331,7 +346,7 @@ nav{
 }
 
 .container21 {
-  margin: -50px 10px 10px 750px;
+  margin: -20px 10px 50px 750px;
 }
 
 .container16 img {
@@ -351,15 +366,15 @@ nav{
   line-height: 86px;
   font-size: 25px;
   color: #263244;
-  padding: 100px 10px 0px 25px;
+  padding: 150px 10px 0px 25px;
 }
 
 .container23 {
-  margin: -30px 0px 0px 30px;
+  margin: -30px 0px 40px 746px;
 }
 
 .container26 {
-  margin: -40px 10px 80px 750px
+  margin: -20px 10px 80px 760px
 }
 
 .container24 {
@@ -385,13 +400,13 @@ nav{
   text-align: center;
   font-size: 25px;
   color: #fff;
-  padding: 30px 10px 0px 0px;
+  padding: 50px 10px 0px 0px;
 
 }
 
 
 .container29 {
-  margin: -25px 10px 40px 750px;
+  margin: 15px 10px 30px 750px;
 }
 
 .container30 {
@@ -404,20 +419,19 @@ nav{
   color: #fff;
   column-gap: 5%;
   column-count: 3;
-  margin: 30px 360px 40px 350px;
+  margin: 30px 360px 70px 350px;
   text-align: center;
 }
 
 .container32 {
   text-align: center;
   color: #fff;
-  margin: -30px 0px 0px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 
-
 .container33 {
-  margin: 10px 0px 20px 340px;
+  margin: 10px 0px 26px 340px;
 }
 
 .container39 {
@@ -439,7 +453,9 @@ nav{
     margin: 20px 0px 0px 710px;
 }
 
-
+.container36 {
+  margin: 11px 0px 0px 0px;
+}
 
 
 
