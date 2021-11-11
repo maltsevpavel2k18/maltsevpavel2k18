@@ -1,0 +1,941 @@
+
+/*Привет! Я Павел Мальцев*/
+
+body{
+  font-family: arial, sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 60px;
+  background: #344051;
+  position: fixed;
+  z-index: 1;
+}
+
+.custom-css3 {
+  font-size: 40px;
+  color: grey;
+}
+
+
+/*Загрузка страницы */
+
+.preloader{
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  z-index: 1;
+
+}
+
+.cssload-cssload-wrap2 {
+	width: 146px;
+	height: 146px;
+	overflow: hidden;
+}
+.cssload-wrap {
+	position: absolute;
+	width: 97px;
+	height: 97px;
+	left: 50%;
+	top: 50%;
+	margin-top: -49px;
+	margin-left: -49px;
+	transform: scale(2);
+		-o-transform: scale(2);
+		-ms-transform: scale(2);
+		-webkit-transform: scale(2);
+		-moz-transform: scale(2);
+}
+.cssload-wrap .cssload-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	box-shadow: 0 0 24px 37px rgb(255,255,255) inset;
+		-o-box-shadow: 0 0 24px 37px rgb(255,255,255) inset;
+		-ms-box-shadow: 0 0 24px 37px rgb(255,255,255) inset;
+		-webkit-box-shadow: 0 0 24px 37px rgb(255,255,255) inset;
+		-moz-box-shadow: 0 0 24px 37px rgb(255,255,255) inset;
+}
+.cssload-wrap .cssload-cogWheel {
+	position: absolute;
+	top: 50%;
+	margin-top: -24px;
+	width: 49px;
+	height: 49px;
+}
+.cssload-wrap .cssload-cogWheel.cssload-one {
+	left: -6.25px;
+	animation: cssload-rotLeft 1.15s infinite linear;
+		-o-animation: cssload-rotLeft 1.15s infinite linear;
+		-ms-animation: cssload-rotLeft 1.15s infinite linear;
+		-webkit-animation: cssload-rotLeft 1.15s infinite linear;
+		-moz-animation: cssload-rotLeft 1.15s infinite linear;
+}
+.cssload-wrap .cssload-cogWheel.cssload-one .cssload-one:before {
+	border: none;
+}
+.cssload-wrap .cssload-cogWheel.cssload-two {
+	right: -6.25px;
+	margin-top: -23px;
+	transform: rotate(196deg);
+		-o-transform: rotate(196deg);
+		-ms-transform: rotate(196deg);
+		-webkit-transform: rotate(196deg);
+		-moz-transform: rotate(196deg);
+	animation: cssload-rotRight 1.15s infinite linear;
+		-o-animation: cssload-rotRight 1.15s infinite linear;
+		-ms-animation: cssload-rotRight 1.15s infinite linear;
+		-webkit-animation: cssload-rotRight 1.15s infinite linear;
+		-moz-animation: cssload-rotRight 1.15s infinite linear;
+}
+.cssload-wrap .cssload-cogWheel.cssload-two .cssload-one:before {
+	border: none;
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 50%;
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog:after {
+	display: block;
+	position: absolute;
+	content: ' ';
+	border: 2px solid rgba(15,9,7,0.98);
+	border-left: none;
+	height: 9px;
+	width: 5px;
+	right: -9px;
+	top: -4px;
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog:before {
+	display: block;
+	position: absolute;
+	content: ' ';
+	border-left: 2px solid rgb(13,9,13);
+	height: 10px;
+	width: 4px;
+	right: -6px;
+	top: -13px;
+	transform: rotate(-20deg);
+		-o-transform: rotate(-20deg);
+		-ms-transform: rotate(-20deg);
+		-webkit-transform: rotate(-20deg);
+		-moz-transform: rotate(-20deg);
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog.cssload-one {
+	transform: rotate(-80deg);
+		-o-transform: rotate(-80deg);
+		-ms-transform: rotate(-80deg);
+		-webkit-transform: rotate(-80deg);
+		-moz-transform: rotate(-80deg);
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog.cssload-two {
+	transform: rotate(-40deg);
+		-o-transform: rotate(-40deg);
+		-ms-transform: rotate(-40deg);
+		-webkit-transform: rotate(-40deg);
+		-moz-transform: rotate(-40deg);
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog.cssload-three {
+	transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog.cssload-four {
+	transform: rotate(40deg);
+		-o-transform: rotate(40deg);
+		-ms-transform: rotate(40deg);
+		-webkit-transform: rotate(40deg);
+		-moz-transform: rotate(40deg);
+}
+.cssload-wrap .cssload-cogWheel .cssload-cog.cssload-five {
+	transform: rotate(80deg);
+		-o-transform: rotate(80deg);
+		-ms-transform: rotate(80deg);
+		-webkit-transform: rotate(80deg);
+		-moz-transform: rotate(80deg);
+}
+
+
+
+
+
+@keyframes cssload-rotLeft {
+	from {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+@-o-keyframes cssload-rotLeft {
+	from {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+@-ms-keyframes cssload-rotLeft {
+	from {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+@-webkit-keyframes cssload-rotLeft {
+	from {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+@-moz-keyframes cssload-rotLeft {
+	from {
+		transform: rotate(-30deg);
+	}
+	to {
+		transform: rotate(10deg);
+	}
+}
+
+@keyframes cssload-rotRight {
+	from {
+		transform: rotate(-174deg);
+	}
+	to {
+		transform: rotate(-214deg);
+	}
+}
+
+@-o-keyframes cssload-rotRight {
+	from {
+		transform: rotate(-174deg);
+	}
+	to {
+		transform: rotate(-214deg);
+	}
+}
+
+@-ms-keyframes cssload-rotRight {
+	from {
+		transform: rotate(-174deg);
+	}
+	to {
+		transform: rotate(-214deg);
+	}
+}
+
+@-webkit-keyframes cssload-rotRight {
+	from {
+		transform: rotate(-174deg);
+	}
+	to {
+		transform: rotate(-214deg);
+	}
+}
+
+@-moz-keyframes cssload-rotRight {
+	from {
+		transform: rotate(-174deg);
+	}
+	to {
+		transform: rotate(-214deg);
+	}
+}
+
+/* Загрузка страницы */
+
+
+
+
+
+
+.logo{
+  color: #fff;
+  font-size: 27px;
+  line-height: 60px;
+  /* padding-left: 300px; Отступ слева*/
+  float: left; /*Прижимается блок к следующему блоку с левой или правой стороны*/
+
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+.menu{
+  float: left;
+  /*padding-left: 300px; из-за подключения bootstrap убирается, ибо все едет */
+
+}
+
+.menu li{
+  float: left; /*В данной ситуации это свойство поставило кнопки меню в ряд и прижало кнопку к кнопке*/
+  line-height: 60px; /*Расстояние между верхней линией и текстом*/
+  color: #fff; /*Цвет букв меню*/
+  margin-right: 40px; /*Отступ справа*/
+  font-size: 14px; /*Размер текста*/
+  text-transform: uppercase; /*Заглавные буквы у всего текста - uppercase*/
+}
+
+.main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px 0px 50px 0px;
+  float: left;
+  background: url(../img/fon2.3.png) 0% 0%/1600px no-repeat local;
+}
+
+.title__container{
+
+  margin: 250px 0px 200px 0px;
+  color: #2c384a;
+  text-align: center;
+  width: 50%;
+
+}
+
+.title__container h1{
+  font-family: Arial, sans-serif;
+  font-size: 70px;
+  font-weight: 600; /*Жирность текста*/
+}
+
+.title__container h4{
+  margin-top: 40px;
+  font-size: 22px;
+  color: #79818d;
+
+}
+
+.title__container input{
+  height: 40px;
+  text-align: center;
+  border: 2px solid #6d7682;
+  background: none;
+  border-radius: 5px;
+  color: #6d7682;
+  font-size: 18px;
+  padding: 0px 16px;
+  margin: 30px 14px 0px 14px;
+}
+
+/* Аннимации в разделе "Привет! Я Павел Мальцев" */
+
+.menu li a {
+  transition: all 0.1s;
+  color: white;
+  transform: scale(1);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu li a:visited {
+  color: white;
+}
+
+.menu li a:hover {
+  color: #e88604;
+}
+
+.menu li a:active {
+  transform: scale(1.1);
+}
+
+.title__container input {
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.title__container input:hover {
+  background: #354051;
+  color: white;
+}
+
+.title__container input:active {
+  transform: scale(1.1);
+}
+
+/* Аннимации @keyframes в разделе "Привет! Я Павел Мальцев" */
+
+@keyframes comming {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+
+}
+
+.logo {
+  -webkit-animation: comming 2s ease;
+  -o-animation: comming 2s ease;
+  animation: comming 2s ease;
+}
+
+@keyframes topshift {
+  from{
+    opacity: 0;
+    margin-top: -80px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
+  }
+
+}
+
+.menu li {
+  -webkit-animation: topshift 0.4s ease forwards;
+  -o-animation: topshift 0.4s ease forwards;
+  animation: topshift 0.4s ease forwards;
+  opacity: 0;
+}
+
+.menu li:nth-child(2){
+  animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+  animation-delay: 0.8s;
+}
+
+
+.menu li:nth-child(4){
+  animation-delay: 1.2s;
+}
+
+
+.menu li:nth-child(5){
+  animation-delay: 1.6s;
+}
+
+
+.menu li:nth-child(6){
+  animation-delay: 2s;
+}
+
+@keyframes titlemove {
+  from{
+    opacity: 0;
+    margin-left: -500px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0px;
+  }
+
+}
+
+.title__container{
+
+-webkit-animation: titlemove 1s ease forwards;
+  -o-animation: titlemove 1s ease forwards;
+  animation: titlemove 1s ease forwards;
+
+  -webkit-animation-delay: 1.9s;
+  -o-animation-delay: 1.9s;
+  animation-delay: 1.9s;
+  opacity: 0;
+}
+
+
+
+/*
+
+.hr-line{
+  (?) Как сделать толщину линии и тень вверх?
+}
+
+*/
+
+
+
+/* Обо мне */
+
+.aboutme_css {
+  background: color: #fff;
+  margin: 0px 0px 50px 0px;
+
+}
+
+.aboutme_text {
+  line-height: 50px;
+  font-size: 25px;
+  color: #263244;
+  text-align: center;
+
+}
+
+.aboutme_text_img {
+  margin: 0px 10px 30px 755px;
+}
+
+.aboutme_text_img1 img {
+  display: block;
+  margin: 0px auto 10px;
+  border-radius: 50%;
+  border: 1px #000 solid;
+  width: 100px;
+  margin-left: 735px;
+
+}
+
+.aboutme_css p {
+  padding-left: 25%;
+  padding-right: 25%;
+  color: #6d7682;
+  font-size: 15px;
+}
+
+.aboutme_css input {
+  height: 40px;
+  border: 1px solid #6d7682;
+  background: none;
+  border-radius: 5px;
+  color: #6d7682;
+  font-size: 24px;
+  padding: 0px 16px;
+  margin-left: 45%;
+}
+
+.text_input{
+  margin: 70px 0px -10px -50px;
+}
+
+.text_input input{
+  transition: all 0.2s; /* Угасание кнопки */
+  transform: scale(1);
+}
+
+.text_input input:hover {
+  background: #354051;
+  color: white;
+}
+
+.text_input input:active {
+  transform: scale(1.1);
+}
+
+
+/* Что я умею? */
+
+.container3 h4 {
+  line-height: 86px;
+  font-size: 25px;
+  color: #263244;
+  padding: 70px 10px 50px 10px;
+}
+
+.container3 {
+  width: 100%;
+  height: 800px;
+  margin-top: auto;
+  float: left;
+  background: url(../img/fon3.1.png) 50% 50%/2400px no-repeat local;
+  background-attachment: fixed;
+}
+
+.container3 img {
+  margin: -65px 100px 100px 760px;
+}
+
+
+.container4 {
+  column-gap: 5%;
+  column-count: 4;
+  column-fill: auto;
+  margin: 0px 70px 0px 70px;
+
+}
+
+.Veb-dizain {
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+  padding: 120px 20px 5px 20px;
+}
+
+.Veb-dizain1 {
+  margin: 0px 0px -80px -670px;
+  padding: 20px 20px;
+}
+
+
+.Razrabotka {
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+  padding: 140px 20px 5px 20px;
+}
+
+.Razrabotka1 {
+  margin: -20px 0px -70px -670px;
+  padding: 13px 20px;
+}
+
+.Optimizatsia {
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+  padding: 140px 20px 5px 20px;
+}
+
+.Optimizatsia1 {
+  margin: -20px 0px -80px -670px;
+  padding: 15px 20px;
+}
+
+.Marketing {
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+  padding: 140px 20px 5px 20px;
+}
+
+.Marketing1 {
+  margin: -20px 0px -90px -670px;
+  padding: 20px 20px;
+}
+
+/* Аннимация в разделе ЧТО Я УМЕЮ
+
+.Veb-dizain:hover {
+  display: contents;
+  transform: scale(1.1);
+}
+
+*/
+
+
+/* Кейсы */
+
+.container60 {
+  margin: 500px 0px 0px 0px;
+}
+
+.container5 {
+  line-height: 15px;
+  font-size: 23px;
+  color: #263244;
+  padding: 100px 30px 10px 0px;
+  margin: 300px 0px 0px;
+  text-align: center;
+}
+
+.container5 h4 {
+  padding: 20px 0px 30px 0px;
+  margin: 300px 0px 0px 0px;
+}
+
+.container5 h6 {
+  font-size: 20px;
+  margin: -20px 0px 0px 0px;
+}
+
+.container5 img {
+  margin: -10px 10px 100px 10px;
+}
+
+.container6 {
+  background: url(../img/кейсы.png) 50% 50%/1400px no-repeat local;
+  margin: 30px 0px 0px 150px;
+}
+
+
+.container9{
+  column-count: 2;
+  column-gap: 0px;
+  margin: 50px 10px 150px 10px;
+}
+
+.container8 {
+  margin: 100px 150px 0px -250px;
+
+}
+
+.container7 {
+  margin: -10px 10px 10px 150px;
+
+}
+
+.container7 input {
+  display: block;
+  border-color: #63b5ae;
+  background-color: #63b5ae;
+  padding: 15px 30px 15px 30px;
+  border-radius: 5px;
+  border: 2px solid #63b5ae;
+  font-size: 18px;
+  color:
+}
+
+/* Аннимация в разделе КЕЙСЫ */
+
+.container7 input {
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.container7 input:hover {
+  background: #007369;
+  color: white;
+}
+
+.container7 input:active {
+  transform: scale(1.1);
+}
+
+/* Расчет стоимости */
+
+.container10 {
+  text-align: left;
+  margin: 100px 670px 150px 500px;
+}
+
+.container11 {
+  line-height: 50px;
+  font-size: 25px;
+  color: #263244;
+  margin-left: 150px;
+}
+
+.container12 select {
+  width: 800px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #eeee;
+  margin: 10px 0px 0px 0px;
+}
+
+.container12 {
+  margin: 0px 0px 0px -100px;
+}
+
+.container50 {
+  margin: 0px -300px 0px -100px;
+}
+
+.container13 {
+  word-spacing: 721px;
+  font-size: 20px;
+}
+
+.container14 {
+  word-spacing: 677px;
+  font-size: 20px;
+}
+
+
+
+
+/* Немного статистики */
+
+.container15 h4 {
+  text-align: center;
+  line-height: 86px;
+  font-size: 25px;
+  color: #263244;
+  padding: 80px 10px 0px 10px;
+}
+
+.container16 {
+  column-gap: 3%;
+  column-count: 4;
+  column-fill: balance;
+  margin: 100px 100px 100px 100px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.container15 {
+  background: url(../img/fon4.png) 50% 50%/2400px no-repeat local;
+  background-attachment: fixed;
+}
+
+.container21 {
+  margin: -20px 10px 50px 750px;
+}
+
+.container16 img {
+  padding: 20px 20px 20px 20px;
+}
+
+
+
+/* Отзывы */
+
+.container22 {
+  margin: -150px 0px 50px 0px;
+}
+
+.container22 h4 {
+  text-align: center;
+  line-height: 86px;
+  font-size: 25px;
+  color: #263244;
+  padding: 150px 10px 0px 25px;
+}
+
+.container23 {
+  margin: -30px 0px 40px 746px;
+}
+
+.container26 {
+  margin: -20px 10px 80px 760px
+}
+
+.container24 {
+  margin: 10px 400px 20px 400px;
+}
+
+
+
+
+
+
+
+
+/* Мои контакты */
+
+.container27 {
+  width: 1570px;
+  height: 670px;
+  background: url(../img/fon5.png) 50% 50%/1577px no-repeat local;
+}
+
+.container28 {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  padding: 50px 10px 0px 0px;
+
+}
+
+
+.container29 {
+  margin: 15px 10px 30px 750px;
+}
+
+.container30 {
+  margin: 0px 0px 30px -20px;
+  color: #fff;
+  font-size: 13px;
+}
+
+.container31 {
+  color: #fff;
+  column-gap: 5%;
+  column-count: 3;
+  margin: 30px 360px 0px 350px;
+  text-align: center;
+}
+
+.container32 {
+  text-align: center;
+  color: #fff;
+  margin: 0px 0px 30px 0px;
+}
+
+
+.container33 {
+  margin: 10px 0px 26px 340px;
+}
+
+.container39 {
+  margin: -46px 0px 20px 780px;
+}
+
+.container34 {
+  margin: 10px 0px 0px 340px;
+}
+
+.container35 input {
+    height: 35px;
+    border: 1px solid #fff;
+    background: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    margin: 20px 0px 0px 710px;
+}
+
+.container36 {
+  margin: 11px 0px 0px 0px;
+}
+
+
+
+
+/* Аннимация в разделе МОИ КОНТАКТЫ */
+
+.container35 input {
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.container35 input:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.container35 input:active {
+  transform: scale(1.1);
+}
+
+
+
+
+/*bootstrap and adaptaition*/
+
+.white-btn:visited {
+  color: white;
+}
+
+@media (max-width: 991px){
+  .title__container, .title__container h4, .title__container input {
+    color: white;
+    z-index: 3;
+  }
+
+  .title__container input{
+    border: 2px solid #ffff;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .main {
+    content: "";
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+  }
+
+}
+
+
+
+.container0 {
+}
