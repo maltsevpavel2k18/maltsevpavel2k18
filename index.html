@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11,43 +13,150 @@
     <title>Мальцев Павел - Веб-разработчик</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+
+    <!--
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+  -->
 
   </head>
 
   <body>
-    <div class="container52">
+
+
+
+    <div class="preloader" id="preloader">
+      <div class="cssload-cssload-wrap2">
+        <div class="cssload-wrap">
+
+          <div class="cssload-overlay"></div>
+
+          <div class="cssload-cogWheel cssload-one">
+            <div class="cssload-cog cssload-one"></div>
+            <div class="cssload-cog cssload-two"></div>
+            <div class="cssload-cog cssload-three"></div>
+            <div class="cssload-cog cssload-four"></div>
+            <div class="cssload-cog cssload-five"></div>
+            <div class="cssload-center"></div>
+          </div>
+
+          <div class="cssload-cogWheel cssload-two">
+            <div class="cssload-cog cssload-one"></div>
+            <div class="cssload-cog cssload-two"></div>
+            <div class="cssload-cog cssload-three"></div>
+            <div class="cssload-cog cssload-four"></div>
+            <div class="cssload-cog cssload-five"></div>
+            <div class="cssload-center"></div>
+          </div>
+
+        </div>
+      </div>
+
+<!--
+          <div id="fountainG">
+          <div id="fountainG_1" class="fountainG"></div>
+          <div id="fountainG_2" class="fountainG"></div>
+          <div id="fountainG_3" class="fountainG"></div>
+          <div id="fountainG_4" class="fountainG"></div>
+          <div id="fountainG_5" class="fountainG"></div>
+          <div id="fountainG_6" class="fountainG"></div>
+          <div id="fountainG_7" class="fountainG"></div>
+          <div id="fountainG_8" class="fountainG"></div>
+        </div>
+  -->
+         </div>
+
+
+
+
       <header>
         <nav>
-          <div class="logo">Павел Мальцев</div>
-          <div class="menu">
-            <ul>
-              <li>Обо мне</li>
-              <li>Услуги</li>
-              <li>Кейсы</li>
-              <li>Прайс</li>
-              <li>Отзывы</li>
-              <li>Контакты</li>
-            </ul>
-          </div>
+
+          <div class="container ">
+            <div class="row">
+              <div class="col-xxl-2 col-lg-3 col-7 ">
+
+                <div class="logo">Павел Мальцев</div>
+
+              </div>
+
+
+
+              <div class=" px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+
+                <div class="menu">
+                  <ul>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+
+                <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+
+                  <div class="dropdown">
+                    <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Навигация
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+
+                    <!--  <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+
+                      <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                      <li><a class="dropdown-item" href="#">Услуги</a></li>
+                      <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                      <li><a class="dropdown-item" href="#">Прайс</a></li>
+                      <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                      <li><a class="dropdown-item" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div>
         </nav>
       </header>
-    </div>
 
-    <div class="main">
-      <div class="title__container">
-        <h1>Привет!<br>Я - Павел Мальцев :) </h1>
-        <h4>_фулл стек веб-разработчик_</h4>
-        <input type="submit" value="Обо мне">
-        <input type="submit" value="Мои работы">
-    </div>
-  </div>
+    <main>
+      <section class="main">
+        <div class="container h-100">
+          <div class="row align-items-center h-100">
+            <div class="col-lg-6 mt-5 pt-5">
+              <div class="title__container mt-5">
+                <h1>Привет!<br>Я - Павел Мальцев</h1>
+                  <h4>
+                    <i class="fa fa-css3 icon-uncorn-custom-css3" aria-hidden="true"></i>
+                    фулл стек веб-разработчик
+                  </h4>
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
+              </div></div></div></div>
+      </section>
+    </main>
+
+
 
 
 <div class="aboutme_css">
 
   <h4  class="aboutme_text" style="position: relative;text-align: center;">ОБО МНЕ</h4>
   <div class="aboutme_text_img">
-    <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\Черта заголовка.png">
+    <img src="img\Черта заголовка.png">
   </div>
 
   <div class="aboutme_text_img1">
@@ -69,7 +178,7 @@
 
 <div class="container3">
   <h4 style="position: relative;text-align: center;">ЧТО Я УМЕЮ</h4>
-    <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\Черта заголовка.png">
+    <img src="img\Черта заголовка.png">
     <br>
     <br>
     <br>
@@ -78,7 +187,7 @@
   <div class="container4">
 <div class="Veb-dizain">
   <div class="Veb-dizain1">
-    <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\ноут.png">
+    <img src="img\ноут.png">
   </div>
   <b><h5 style="color:orange;">Веб-дизайн</h5></b>
   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
@@ -86,7 +195,7 @@
 
 <div class="Razrabotka">
   <div class="Razrabotka1">
-    <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\знак.png">
+    <img src="img\знак.png">
   </div>
   <b><h5 style="color:orange;">Разработка</h5></b>
   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
@@ -95,7 +204,7 @@
 
 <div class="Optimizatsia">
   <div class="Optimizatsia1">
-    <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\ракета.png">
+    <img src="img\ракета.png">
   </div>
   <b><h5 style="color:orange;">CEO-Оптимизация</h5></b>
   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
@@ -104,7 +213,7 @@
 
 <div class="Marketing">
   <div class="Marketing1">
-    <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\граммофон.png">
+    <img src="img\граммофон.png">
   </div>
   <b><h5 style="color:orange;">Маркетинг</h5></b>
   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h6>
@@ -114,11 +223,11 @@
 
 
 
-
+<div class="container60">
 
 <div class="container5">
-  <h4 style="position: relative;text-align: center;">КЕЙСЫ</h4>
-  <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\Черта заголовка.png">
+  <h4 style="text-align: center;">КЕЙСЫ</h4>
+  <img src="img\Черта заголовка.png">
   <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h6>
 </div>
 
@@ -150,7 +259,7 @@
   </div>
 </div>
 
-
+</div>
 
 
 
@@ -198,7 +307,7 @@
 
   <br>
   <br>
-<hr>
+
   <div class="container50">
     <div class="container13">
       <h4>Сроки 0</h4>
@@ -220,35 +329,35 @@
     <h4 style="position: relative;text-align: center;">НЕМНОГО СТАТИСТИКИ</h4>
     <br>
     <div class="container21">
-      <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\Черта заголовка.png">
+      <img src="img\Черта заголовка.png">
     </div>
     <br>
     <br>
     <br>
     <div class="container16">
       <div class="container17">
-        <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\смайл.png">
+        <img src="img\смайл.png">
         <br>
         <big><b>120</b></big>
         <p>Счастливых клиентов</p>
       </div>
       <br>
       <div class="container18">
-        <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\скобки.png">
+        <img src="img\скобки.png">
         <br>
         <big><b>4.600</b></big>
         <p>Часов работы</p>
       </div>
       <br>
       <div class="container19">
-        <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\галочка.png">
+        <img src="img\галочка.png">
         <br>
         <big><b>340</b></big>
         <p>Проектов завершено</p>
       </div>
       <br>
       <div class="container20">
-        <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\кубок.png">
+        <img src="img\кубок.png">
         <br>
         <big><b>23</b></big>
         <p>Наград получено</p>
@@ -275,7 +384,7 @@
     <h4 style="position: relative;text-align: center;">ОТЗЫВЫ</h4>
 
     <div class="container26">
-      <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\Черта заголовка.png">
+      <img src="img\Черта заголовка.png">
     </div>
 
     <div class="container23">
@@ -309,15 +418,13 @@
 <div class="container27">
 
 
-
-
   <div class="container28">
     <h4 style="position: relative;text-align: center;">МОИ КОНТАКТЫ</h4>
   </div>
 
 
   <div class="container29">
-    <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\Черта заголовка.png">
+    <img src="img\Черта заголовка.png">
   </div>
 
 
@@ -329,21 +436,21 @@
   <div class="container31">
 
     <div class="container36">
-      <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\geo.png">
+      <img src="img\geo.png">
       <br>
       <br>
       <p>Москва, ул. Крупской, д. 7</p>
     </div>
 <br>
     <div class="container37">
-      <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\convert.png">
+      <img src="img\convert.png">
       <br>
       <br>
       <p>maltsevpavel2k18@gmail.com</p>
     </div>
 <br>
     <div class="container38">
-      <img src="C:\Users\Евгений\Desktop\Курс IT\My_Project\src\img\truba.png">
+      <img src="img\truba.png">
       <br>
       <br>
       <p>+7(999)848-50-66</p>
@@ -376,6 +483,10 @@
 
 
 </div>
+
+
+<script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 
   </body>
 </html>

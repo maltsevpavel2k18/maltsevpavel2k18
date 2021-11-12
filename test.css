@@ -1,0 +1,36 @@
+.block_orange {
+  width: 94%;
+  height: 327px;
+  margin: 3%;
+  background-color: #db7f2e;
+}
+.block_green {
+  width: 20%;
+  height: 590px;
+  margin-left: 3%;
+  background-color: #819045;
+  float: left;
+}
+
+.block_blue {
+  width: 71%;
+  height: 590px;
+  margin-left: 3%;
+  background-color: #5399e8;
+  float: left;
+}
+
+@media(min-width: 700px) and (max-width: 1000px) {
+
+  .block_green {
+    width: 94%;
+    margin-right: 3%;
+  }
+
+  .block_blue {
+    width: 94%;
+    margin-right: 3%;
+    margin-top: 3%;
+  }
+
+}
